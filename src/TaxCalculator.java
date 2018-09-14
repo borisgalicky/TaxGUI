@@ -28,16 +28,16 @@ public class TaxCalculator extends javax.swing.JFrame {
 
         buttonGroup1 = new javax.swing.ButtonGroup();
         InputValue = new javax.swing.JTextField();
-        jLabel1 = new javax.swing.JLabel();
+        Title = new javax.swing.JLabel();
         TenTax = new javax.swing.JRadioButton();
         TwelveTax = new javax.swing.JRadioButton();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
+        EnterValue = new javax.swing.JLabel();
+        €_1 = new javax.swing.JLabel();
+        HighOfTax = new javax.swing.JLabel();
         BtnCalculate = new javax.swing.JButton();
-        jLabel5 = new javax.swing.JLabel();
+        Result = new javax.swing.JLabel();
         InputResult = new javax.swing.JTextField();
-        jLabel6 = new javax.swing.JLabel();
+        €_2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -47,8 +47,8 @@ public class TaxCalculator extends javax.swing.JFrame {
             }
         });
 
-        jLabel1.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
-        jLabel1.setText("Tax calculator");
+        Title.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        Title.setText("Tax calculator");
 
         TenTax.setSelected(true);
         TenTax.setText("10% tax");
@@ -65,11 +65,11 @@ public class TaxCalculator extends javax.swing.JFrame {
             }
         });
 
-        jLabel2.setText("Enter value:");
+        EnterValue.setText("Enter value:");
 
-        jLabel3.setText("€");
+        €_1.setText("€");
 
-        jLabel4.setText("Choose high of tax:");
+        HighOfTax.setText("Choose high of tax:");
 
         BtnCalculate.setText("Calculate");
         BtnCalculate.addActionListener(new java.awt.event.ActionListener() {
@@ -78,7 +78,7 @@ public class TaxCalculator extends javax.swing.JFrame {
             }
         });
 
-        jLabel5.setText("You'll get:");
+        Result.setText("You'll get:");
 
         InputResult.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -86,7 +86,7 @@ public class TaxCalculator extends javax.swing.JFrame {
             }
         });
 
-        jLabel6.setText("€");
+        €_2.setText("€");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -94,54 +94,54 @@ public class TaxCalculator extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(51, Short.MAX_VALUE)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 187, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(Title, javax.swing.GroupLayout.PREFERRED_SIZE, 187, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(47, 47, 47))
             .addGroup(layout.createSequentialGroup()
                 .addGap(51, 51, 51)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(BtnCalculate, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel4)
+                    .addComponent(HighOfTax)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel2)
+                        .addComponent(EnterValue)
                         .addGap(18, 18, 18)
                         .addComponent(InputValue, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel3))
+                        .addComponent(€_1))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(TenTax, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(TwelveTax))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel5)
+                        .addComponent(Result)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(InputResult, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel6)))
+                        .addComponent(€_2)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(Title, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(7, 7, 7)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(InputValue, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel2)
-                    .addComponent(jLabel3))
+                    .addComponent(EnterValue)
+                    .addComponent(€_1))
                 .addGap(18, 18, 18)
-                .addComponent(jLabel4)
+                .addComponent(HighOfTax)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(TenTax)
                     .addComponent(TwelveTax))
                 .addGap(12, 12, 12)
-                .addComponent(BtnCalculate, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(BtnCalculate, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel5)
+                    .addComponent(Result)
                     .addComponent(InputResult, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel6))
+                    .addComponent(€_2))
                 .addContainerGap(27, Short.MAX_VALUE))
         );
 
@@ -174,9 +174,9 @@ public class TaxCalculator extends javax.swing.JFrame {
         } else {
             ResultValue = (ParsedValue / 100)*12;
         }
+        
         String result =String.valueOf(ResultValue);
         InputResult.setText(result);
-        
     }//GEN-LAST:event_BtnCalculateActionPerformed
 
     /**
@@ -192,16 +192,16 @@ public class TaxCalculator extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BtnCalculate;
+    private javax.swing.JLabel EnterValue;
+    private javax.swing.JLabel HighOfTax;
     private javax.swing.JTextField InputResult;
     private javax.swing.JTextField InputValue;
+    private javax.swing.JLabel Result;
     private javax.swing.JRadioButton TenTax;
+    private javax.swing.JLabel Title;
     private javax.swing.JRadioButton TwelveTax;
     private javax.swing.ButtonGroup buttonGroup1;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel €_1;
+    private javax.swing.JLabel €_2;
     // End of variables declaration//GEN-END:variables
 }
